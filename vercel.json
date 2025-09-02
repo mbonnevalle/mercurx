@@ -1,16 +1,16 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "builds": [
     {
-	    "cleanUrls": true,
-	    "trailingSlash": false,
-      "src": "vercel-build.sh",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "theme"
-      },
-      "redirects": [
-        { "source": "/index.html", "destination": "/", "permanent": true }
-      ]
+      }
     }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true }
   ]
 }
