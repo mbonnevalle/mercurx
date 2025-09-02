@@ -1,0 +1,26 @@
+{
+  "colors": {
+    "default": {
+      "theme_color": {
+        "primary": "#376AED",
+        "secondary": "#47CC88",
+        "tertiary": "#334679",
+        "body": "#05071a",
+        "border": "#1c244c",
+        "shadow": "#1A2248",
+        "theme_light": "#101636"
+      },
+      "text_color": {
+        "default": "#9ea3bf",
+        "dark": "#040404"
+      }
+    }
+  },
+  "fonts": {
+    "font_family": {
+      "primary": "Sora:wght@300;400;500",
+      "primary_type": "sans-serif"
+    },
+    "font_size": { "base": "16", "scale": "1.250" }
+  }
+}

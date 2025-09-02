@@ -1,0 +1,29 @@
+<div
+  class="shadow-inset shadow-shadow/60 border border-border p-8 lg:p-10 rounded-4xl group"
+>
+  <div class="row gap-y-6 flex-col items-center">
+    <div>
+      <div class="relative rounded-3xl overflow-hidden">
+        @@include('components/card-tag.html', { "tag": "@@tag" })
+        <img
+          class="w-full object-cover group-hover:scale-105 transition-transform duration-300"
+          src="@@imgSrc"
+          alt="@@title"
+          width="500"
+          height="385"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="flex flex-col gap-y-8 py-2">
+        <p class="font-light">Thursday, May 23, 2024</p>
+        <div>
+          <h3 class="text-h5 text-white mb-4">@@title</h3>
+          <p>@@desc</p>
+        </div>
+        <!--prettier-ignore-->
+        @@include('components/arrow-btn.html', { "href": "blog-single.html", "title": "Read Full Blog" })
+      </div>
+    </div>
+  </div>
+</div>

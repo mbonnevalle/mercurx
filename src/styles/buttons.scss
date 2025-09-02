@@ -1,0 +1,31 @@
+.btn {
+  @apply inline-block rounded-lg px-6 py-4 font-medium capitalize transition duration-300;
+}
+
+.btn-sm {
+  @apply rounded-sm px-4 py-1.5 text-sm transition duration-300;
+}
+
+.btn-primary {
+  @apply border border-white/10  text-white bg-primary;
+}
+
+.btn-secondary {
+  @apply relative border border-border text-white overflow-hidden;
+  z-index: 1;
+}
+
+.btn-secondary::before {
+  content: "";
+  @apply absolute inset-0 bg-gradient-to-r from-tertiary to-tertiary/30 opacity-0 transition-opacity duration-500 ease-in-out;
+  z-index: -1;
+}
+
+.btn-secondary:hover::before {
+  @apply opacity-100;
+}
+
+.btn-secondary > * {
+  @apply relative;
+  z-index: 2;
+}

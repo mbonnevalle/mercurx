@@ -1,0 +1,129 @@
+<!--prettier-ignore-->
+@@include('page-header.html', { "title": "Want a Free Demo?","desc":"Experience the Benefits Firsthand with a Free Personalized Demo. Fill out the form and we will reach out to you." })
+
+<section class="section">
+  <div class="container lg:px-24">
+    <div
+      class="border border-border shadow-inset shadow-shadow/60 p-10 rounded-4xl"
+      data-aos="fade-up-sm"
+      data-aos-delay="150"
+    >
+      <form action="#" method="post">
+        <div class="grid grid-cols-2 gap-6">
+          <div class="col-span-2 sm:col-span-1">
+            <label for="firstName" class="form-label">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              aria-required="true"
+              class="form-input"
+              placeholder="John"
+            />
+          </div>
+
+          <div class="col-span-2 sm:col-span-1">
+            <label for="lastName" class="form-label">Last Name *</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-input"
+              required
+              aria-required="true"
+              placeholder="Doe"
+            />
+          </div>
+
+          <div class="col-span-2">
+            <label for="email" class="form-label">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+              aria-required="true"
+              placeholder="johndoe@example.com"
+            />
+          </div>
+
+          <div class="col-span-2">
+            <label for="subject" class="form-label">Subject *</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form-input"
+              required
+              aria-required="true"
+              placeholder="Your message subject"
+            />
+          </div>
+
+          <div class="col-span-2">
+            <label for="message" class="form-label">Write Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              class="form-input h-auto"
+              required
+              aria-required="true"
+              placeholder="Type your message here..."
+            ></textarea>
+          </div>
+
+          <div class="col-span-2">
+            <button
+              type="submit"
+              class="btn btn-primary w-full py-5 px-7 leading-none"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="grid lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <div class="section-intro text-center lg:text-left">
+          <h2 class="title" data-aos="fade-up-sm" data-aos-delay="0">
+            Common Questions
+          </h2>
+          <p
+            class="subtitle lg:w-3/5 mx-auto lg:mx-0"
+            data-aos="fade-up-sm"
+            data-aos-delay="100"
+          >
+            Haven't found what you're looking for? Contact us
+          </p>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <!--FAQ CARDS-->
+        <div data-aos="fade-up-sm" data-aos-delay="150">
+          <!--prettier-ignore-->
+          @@include("components/accordion.html",{title:"What is CloudPeak?",accordion_content:"CloudPeak is a comprehensive cloud-based platform that provides integrated financial management tools, advanced analytics, and collaborative features to help businesses of all sizes optimize their operations and make data-driven decisions."})
+
+          @@include("components/accordion.html",{title:"What services does CloudPeak offer?",accordion_content:"CloudPeak offers a wide range of services including real-time financial reporting, budgeting and forecasting tools, expense management, invoicing, project costing, and customizable dashboards. We also provide API integrations with popular business software for seamless data flow."})
+
+          @@include("components/accordion.html",{title:"How can I get started with CloudPeak?",accordion_content:"Getting started with CloudPeak is easy. Simply visit our website, choose a plan that fits your needs, and sign up for a free trial. Our onboarding team will guide you through the setup process and provide training to ensure you get the most out of our platform."})
+
+          @@include("components/accordion.html",{title:"What are the benefits of using CloudPeak?",accordion_content:"CloudPeak offers numerous benefits including improved financial visibility, streamlined processes, enhanced collaboration, cost savings, and better decision-making capabilities. Our platform scales with your business, providing the tools you need to drive growth and efficiency."})
+
+          @@include("components/accordion.html",{title:"How secure is CloudPeak?",accordion_content:"Security is our top priority. CloudPeak employs industry-leading encryption, regular security audits, and multi-factor authentication. We are SOC 2 Type II compliant and adhere to strict data protection regulations to ensure your sensitive financial information remains secure."})
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include("call-to-action.html")

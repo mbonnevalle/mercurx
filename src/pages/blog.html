@@ -1,0 +1,129 @@
+<!--prettier-ignore-->
+@@include('page-header.html', { "title": "News and Updates","desc":"Stay Ahead with the Latest Trends, Tips, and Industry Insights from CloudPeak Finance" })
+
+<section class="section">
+  <div class="container">
+    <!--Featured Blog Card-->
+    <div
+      data-aos="fade-up-sm"
+      data-aos-delay="150"
+      class="shadow-inset shadow-shadow/60 border border-border p-8 lg:p-10 rounded-4xl"
+    >
+      <div class="row gap-y-10 flex-col-reverse lg:flex-row items-center">
+        <div class="lg:w-[55%] lg:pr-10">
+          <div class="flex flex-col gap-y-8 py-2">
+            <p class="font-light">Thursday, May 23, 2024</p>
+            <div>
+              <h3 class="text-h4 text-white mb-4">
+                New Features and Enhancements to Empower Financial Institutions
+              </h3>
+              <p>
+                CloudPeak Finance unveils a significant product update featuring
+                new tools for improved financial analysis, enhanced security
+                measures, and a more intuitive user interface designed to meet
+                the evolving needs of financial institutions.
+              </p>
+            </div>
+            <!--prettier-ignore-->
+            @@include("components/primary-arrow-btn.html",{href:"blog-single.html","title":"Read Full News"})
+          </div>
+        </div>
+        <div class="lg:w-[45%]">
+          <div class="relative">
+            @@include('components/card-tag.html', { "tag": "Latest News" })
+            <img
+              class="rounded-3xl w-full object-cover"
+              src="images/blog/post_1.png"
+              alt="Blog Post"
+              width="500"
+              height="385"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-intro text-center">
+      <h3 class="title !text-h3">Read Our Blogs</h3>
+      <p class="subtitle lg:col-6 mx-auto">
+        Stay Ahead with the Latest Trends, Tips, and Industry Insights from
+        CloudPeak Finance
+      </p>
+    </div>
+    <div class="section-content">
+      <ul class="px-10 flex flex-wrap justify-center items-center gap-2 mb-14">
+        <li>
+          <button class="blog-category-item active" data-filter="all">
+            All Categories
+          </button>
+        </li>
+        <li>
+          <button class="blog-category-item" data-filter="company">
+            Company
+          </button>
+        </li>
+        <li>
+          <button class="blog-category-item" data-filter="guides">
+            Guides
+          </button>
+        </li>
+        <li>
+          <button class="blog-category-item" data-filter="insights">
+            Insights
+          </button>
+        </li>
+        <li>
+          <button class="blog-category-item" data-filter="business">
+            Business
+          </button>
+        </li>
+        <li>
+          <button class="blog-category-item" data-filter="technology">
+            Technology
+          </button>
+        </li>
+      </ul>
+      <!--prettier-ignore-->
+      <div class="row blog-shuffle-container">
+        <div class="blog-shuffle-item md:col-6" data-groups='["company"]'>
+          @@include('components/blog-card.html',{tag:"Company",title:"New Features and Enhancements to Empower Financial Institutions",desc:"CloudPeak Finance unveils a significant product update featuring new tools for improved financial analysis, enhanced security measures, and a more intuitive user interface.",imgSrc:"images/blog/post_1.png",})
+        </div>
+        <div class="blog-shuffle-item  md:col-6" data-groups='["guides"]'>
+          @@include('components/blog-card.html',{tag:"Guides",title:"The Ultimate Guide to Financial Planning for Startups",desc:"Learn how to create a comprehensive financial plan for your startup, including budgeting, forecasting, and financial analysis to ensure long-term success.",imgSrc:"images/blog/post_2.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["insights"]'>
+          @@include('components/blog-card.html',{tag:"Insights",title:"The Future of Digital Banking: Trends and Predictions",desc:"Discover the latest trends and predictions shaping the future of digital banking, including AI, blockchain, and cybersecurity to stay ahead in the industry.",imgSrc:"images/blog/post_3.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["business"]'>
+          @@include('components/blog-card.html',{tag:"Business",title:"How to Scale Your Business with CloudPeak Finance Solutions",desc:"Explore the benefits of CloudPeak Finance solutions for scaling your business, including automation, analytics, and compliance to drive growth and success.",imgSrc:"images/blog/post_4.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["technology"]'>
+          @@include('components/blog-card.html',{tag:"Technology",title:"Leveraging AI and Machine Learning in Financial Services",desc:"Learn how AI and machine learning are transforming financial services, including risk management, fraud detection, and customer service to enhance operational efficiency.",imgSrc:"images/blog/post_5.png",})
+          </div>
+          <div class="blog-shuffle-item md:col-6" data-groups='["company"]'>
+          @@include('components/blog-card.html',{tag:"Company",title:"New Features and Enhancements to Empower Financial Institutions",desc:"CloudPeak Finance unveils a significant product update featuring new tools for improved financial analysis, enhanced security measures, and a more intuitive user .",imgSrc:"images/blog/post_1.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["guides"]'>
+          @@include('components/blog-card.html',{tag:"Guides",title:"The Ultimate Guide to Financial Planning for Startups",desc:"Learn how to create a comprehensive financial plan for your startup, including budgeting, forecasting, and financial analysis to ensure long-term success.",imgSrc:"images/blog/post_2.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["insights"]'>
+          @@include('components/blog-card.html',{tag:"Insights",title:"The Future of Digital Banking: Trends and Predictions",desc:"Discover the latest trends and predictions shaping the future of digital banking, including AI, blockchain, and cybersecurity to stay ahead in the industry.",imgSrc:"images/blog/post_3.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["business"]'>
+          @@include('components/blog-card.html',{tag:"Business",title:"How to Scale Your Business with CloudPeak Finance Solutions",desc:"Explore the benefits of CloudPeak Finance solutions for scaling your business, including automation, analytics, and compliance to drive growth and success.",imgSrc:"images/blog/post_4.png",})
+          </div>
+        <div class="blog-shuffle-item md:col-6" data-groups='["technology"]'>
+          @@include('components/blog-card.html',{tag:"Technology",title:"Leveraging AI and Machine Learning in Financial Services",desc:"Learn how AI and machine learning are transforming financial services, including risk management, fraud detection, and customer service to enhance operational efficiency.",imgSrc:"images/blog/post_5.png",})
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('call-to-action.html')

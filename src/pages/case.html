@@ -1,0 +1,19 @@
+<!--prettier-ignore-->
+@@include('page-header.html', { "title": "Case Studies","desc":"Explore detailed case studies showcasing how our solutions have transformed businesses, driving efficiency, growth, and innovation across various industries" })
+
+<section class="section">
+  <div class="container">
+    <!--prettier-ignore-->
+    <div class="grid lg:grid-cols-2 gap-6" data-aos="fade-up-sm"
+    data-aos-delay="150">
+      @@include('components/case-study-card.html', { imgSrc: 'images/case_studies/sisyphus.png', title: 'Boosting Sales with Analytics', subtitle: 'How a Leading Retailer Increased Revenue by 25%', desc: 'Discover how our advanced analytics platform helped a major retailer optimize their inventory, personalize marketing campaigns.', href: 'case-single.html' })
+      @@include('components/case-study-card.html', { imgSrc: 'images/case_studies/sisyphus.png', title: 'Revolutionizing Hospitality', subtitle: 'How Airbnb Transformed the Travel Industry', desc: 'Learn how Airbnb leveraged our AI-powered solutions to disrupt the traditional hospitality sector, driving growth and innovation.', href: 'case-single.html' })
+      @@include('components/case-study-card.html', { imgSrc: 'images/case_studies/sisyphus.png', title: 'Driving Innovation with AI', subtitle: 'How Tesla is Shaping the Future of Mobility', desc: 'Explore how Tesla is leveraging our AI solutions to develop cutting-edge autonomous driving technology, revolutionizing the automotive industry.', href: 'case-single.html' })
+      @@include('components/case-study-card.html', { imgSrc: 'images/case_studies/sisyphus.png', title: 'Personalizing the Music Experience', subtitle: 'How Spotify Uses Data to Enhance User Engagement', desc: 'Discover how Spotify leverages our data analytics platform to deliver personalized music recommendations, enhancing user engagement and retention.', href: 'case-single.html' })
+      @@include('components/case-study-card.html', { imgSrc: 'images/case_studies/sisyphus.png', title: 'Optimizing Supply Chain Operations', subtitle: 'How Amazon Streamlined Logistics with AI', desc: 'Learn how Amazon is using our AI-powered solutions to optimize their supply chain operations, reducing costs and improving efficiency.', href: 'case-single.html' })
+      @@include('components/case-study-card.html', { imgSrc: 'images/case_studies/sisyphus.png', title: 'Enhancing Healthcare with Data', subtitle: 'How IBM Watson is Revolutionizing Healthcare', desc: 'Explore how IBM Watson is transforming the healthcare industry with our advanced data analytics platform, improving patient outcomes and reducing costs.', href: 'case-single.html' })
+    </div>
+  </div>
+</section>
+
+@@include('call-to-action.html')

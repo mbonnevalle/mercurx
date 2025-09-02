@@ -1,0 +1,147 @@
+<!-- Banner -->
+<section class="section relative overflow-hidden">
+  <div class="container">
+    <div class="row pt-10 lg:pt-20 g-5">
+      <div class="lg:col-6 lg:self-center">
+        <h1 class="text-h2 lg:text-h1 mb-6" data-aos="fade-up-sm">
+          Manage, Track, and Grow your Finances with Ease.
+        </h1>
+        <p class="mb-8" data-aos="fade-up-sm" data-aos-delay="100">
+          CloudPeak is an all-in-one financial management platform designed to
+          simplify your financial life. From tracking expenses and setting
+          budgets to planning for the future, our powerful tools and intuitive
+          interface help you take control of your financial journey.
+        </p>
+
+        <!--prettier-ignore-->
+        <div data-aos="fade-up-sm" data-aos-delay="150">
+          @@include("components/primary-arrow-btn.html",{href:"book-demo.html","title":"See How It Works"})
+        </div>
+      </div>
+      <div
+        class="lg:col-6"
+        data-aos="fade-left-sm"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <div
+          class="lg:translate-x-[100px] xl:translate-x-[250px] relative p-6 border border-white/15 rounded-4xl mx-auto w-full lg:min-w-[620px] xl:min-w-[850px]"
+        >
+          <img
+            class="object-cover rounded-3xl overflow-hidden"
+            src="images/desktop_features.avif"
+            width="1024"
+            height="784"
+            alt="banner image"
+          />
+
+          <!--shape-->
+          <img
+            src="images/shapes/vertical_blob.webp"
+            class="w-full max-w-[400px] lg:max-w-[500px] absolute -right-[270px] lg:-right-[100px] xl:-right-[60px] bottom-0 lg:bottom-1/2 lg:translate-y-1/2 -z-10"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brand Journey -->
+<section class="section">
+  <div class="container">
+    <div class="section-intro text-center lg:col-8 mx-auto">
+      <h2 class="title" data-aos="fade-up-sm">Core Features</h2>
+      <p class="subtitle" data-aos="fade-up-sm" data-aos-delay="100">
+        Designed to Simplify Your Experience and Maximize the Benefits of
+        CloudPeak's Innovative Features
+      </p>
+    </div>
+    <div class="section-content lg:px-20">
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- card -->
+        <!-- prettier-ignore -->
+        @@include('components/ourmission-card.html', {title: "Seamless Integration", description: "CloudPeak's Flexible Integration Options for Enhanced Efficiency.", imageSrc:"images/cards/faster_integration.webp","aosDelay":"100"})
+        @@include('components/ourmission-card.html', {title: "Scalable Infrastructure", description: "CloudPeak's Scalable Infrastructure Can Handle Your Increasing Demands and Workloads.", imageSrc:"images/cards/happy_customers.webp","aosDelay":"150"})
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section">
+  <div class="container">
+    <div class="section-intro lg:col-8 mx-auto text-center">
+      <h2 class="title" data-aos="fade-up-sm" data-aos-delay="0">
+        Trusted by 14,000+ users
+      </h2>
+      <p
+        class="subtitle w-5/6 mx-auto"
+        data-aos="fade-up-sm"
+        data-aos-delay="100"
+      >
+        Sharing Their Successes and Transformative Experiences with CloudPeak's
+        Powerful SaaS Solutions
+      </p>
+    </div>
+    <div class="section-content">
+      <!--Testimonial Cards-->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        data-aos="fade-up-sm"
+        data-aos-delay="150"
+      >
+        <!--prettier-ignore-->
+        @@include('components/testimonial-card.html', {"quote": "CloudPeak has been a game-changer for our business. Their intuitive platform and service have allowed us to streamline our operations and focus on what matters most. Highly recommended", "name": "Sarah Taranian", "position": "Creative Director", "image": "images/profiles/profile_1.png"})
+        @@include('components/testimonial-card.html', {"quote": "CloudPeak's financial analytics tools have given us unprecedented insights into our cash flow. It's like having a CFO in your pocket.", "name": "Michael Chen", "position": "CEO, TechNova Solutions", "image": "images/profiles/profile_2.png"})
+
+        @@include('components/testimonial-card.html', {"quote": "The real-time reporting feature has transformed our decision-making process. We can now respond to market changes faster than ever.", "name": "Emily Rodriguez", "position": "COO, GreenLeaf Enterprises", "image": "images/profiles/profile_3.png"})
+
+        @@include('components/testimonial-card.html', {"quote": "As a small business owner, CloudPeak's budgeting tools have been invaluable. I finally feel in control of my finances.", "name": "David Okonkwo", "position": "Founder, Craft Coffee Co.", "image": "images/profiles/profile_4.png"})
+
+        @@include('components/testimonial-card.html', {"quote": "The customer support team at CloudPeak is exceptional. They've gone above and beyond to ensure our success with the platform.", "name": "Lisa Tanaka", "position": "Finance Manager, Global Innovations", "image": "images/profiles/profile_5.png"})
+
+        @@include('components/testimonial-card.html', {"quote": "CloudPeak's integration capabilities have allowed us to consolidate our financial data from multiple sources effortlessly. It's been a huge time-saver.", "name": "Alex Petrov", "position": "CTO, DataSync Systems", "image": "images/profiles/profile_6.png"})
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="grid lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <div class="section-intro text-center lg:text-left">
+          <h2 class="title" data-aos="fade-up-sm" data-aos-delay="0">
+            Common Questions
+          </h2>
+          <p
+            class="subtitle lg:w-3/5 mx-auto lg:mx-0"
+            data-aos="fade-up-sm"
+            data-aos-delay="100"
+          >
+            Haven't found what you're looking for? Contact us
+          </p>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <!--FAQ CARDS-->
+        <div data-aos="fade-up-sm" data-aos-delay="150">
+          <!--prettier-ignore-->
+          @@include("components/accordion.html",{title:"What is CloudPeak?",accordion_content:"CloudPeak is a comprehensive cloud-based platform that provides integrated financial management tools, advanced analytics, and collaborative features to help businesses of all sizes optimize their operations and make data-driven decisions."})
+
+          @@include("components/accordion.html",{title:"What services does CloudPeak offer?",accordion_content:"CloudPeak offers a wide range of services including real-time financial reporting, budgeting and forecasting tools, expense management, invoicing, project costing, and customizable dashboards. We also provide API integrations with popular business software for seamless data flow."})
+
+          @@include("components/accordion.html",{title:"How can I get started with CloudPeak?",accordion_content:"Getting started with CloudPeak is easy. Simply visit our website, choose a plan that fits your needs, and sign up for a free trial. Our onboarding team will guide you through the setup process and provide training to ensure you get the most out of our platform."})
+
+          @@include("components/accordion.html",{title:"What are the benefits of using CloudPeak?",accordion_content:"CloudPeak offers numerous benefits including improved financial visibility, streamlined processes, enhanced collaboration, cost savings, and better decision-making capabilities. Our platform scales with your business, providing the tools you need to drive growth and efficiency."})
+
+          @@include("components/accordion.html",{title:"How secure is CloudPeak?",accordion_content:"Security is our top priority. CloudPeak employs industry-leading encryption, regular security audits, and multi-factor authentication. We are SOC 2 Type II compliant and adhere to strict data protection regulations to ensure your sensitive financial information remains secure."})
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('call-to-action.html')

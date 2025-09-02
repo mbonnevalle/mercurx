@@ -1,0 +1,291 @@
+<section class="section section-page-heading xl:pb-24">
+  <div class="container">
+    <div class="section-intro lg:col-6 mx-auto text-center">
+      <h2 class="lg:text-[4.5rem] lg:leading-[1.2] mb-4" data-aos="fade-up-sm">
+        Pricing Plans
+      </h2>
+      <p class="subtitle" data-aos="fade-up-sm" data-aos-delay="100">
+        Efficiently Collaborate Across Departments and Initiatives with
+        CloudPeak's Comprehensive and Easy-to-Use Collaboration Solutions
+      </p>
+
+      <!-- price toggle buttons -->
+      <div
+        data-aos="fade-up-sm"
+        data-aos-delay="150"
+        class="mt-10 flex items-center gap-x-3 lg:gap-x-5 justify-center text-sm font-light transition-all"
+      >
+        <span class="text-white duration-500" id="monthly">Monthly</span>
+
+        <label class="inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            aria-label="pricing switch"
+            id="pricing-switch"
+            class="sr-only peer"
+          />
+          <div
+            class="relative w-[65px] h-[32px] bg-primary peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[33px] rtl:peer-checked:after:-translate-x-[22px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[24px] after:w-[24px] after:transition-all after:duration-500 after:ease-in-out peer-checked:bg-primary"
+          ></div>
+        </label>
+
+        <span id="yearly" class="duration-500">Yearly</span>
+      </div>
+    </div>
+    <div
+      class="section-content lg:px-20"
+      data-aos="fade-up-sm"
+      data-aos-delay="200"
+    >
+      <!-- MONTHLY PRICE CARDS -->
+      <div id="monthly-card-container">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- prettier-ignore -->
+          @@include('components/price-card.html', {"plan": "Basic", "audience": "For solo designers", "price": "$19", "park_1": "Basic Dashboard", "park_2": "Simple Expense Tracking", "park_3": "Monthly Financial Summary", "park_4": "1 Financial Account", "park_5": "Email Support"})
+          @@include('components/price-center-card.html', {"plan": "Premium", "audience": "For small teams", "price": "$49", "park_1": "Comprehensive Dashboard", "park_2": "Advanced Budgeting Tools", "park_3": "Weekly Financial Reports", "park_4": "5 Financial Accounts", "park_5": "Priority Email Support"})
+          @@include('components/price-card.html', {"plan": "Enterprise", "audience": "For large organizations", "price": "$99", "park_1": "Customizable Dashboard", "park_2": "Advanced Forecasting Tools", "park_3": "Real-time Financial Reporting", "park_4": "Unlimited Financial Accounts", "park_5": "24/7 Dedicated Support"})
+        </div>
+      </div>
+      <!--YEARLY PRICE CARDS-->
+      <div id="yearly-card-container" class="hidden">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- prettier-ignore -->
+          @@include('components/price-card.html', {"plan": "Basic","audience": "For solo entrepreneurs","price": "$199","park_1": "Basic Dashboard","park_2": "Personal Budgeting Tools","park_3": "Quarterly Financial Reports","park_4": "1 Financial Account","park_5": "Email Support (48h response time)"})
+          @@include('components/price-center-card.html', {"plan": "Premium","audience": "For small teams","price": "$499","park_1": "Advanced Dashboard","park_2": "Team Budgeting Tools","park_3": "Monthly Financial Reports","park_4": "5 Financial Accounts","park_5": "Priority Email Support (24h response time)"})
+          @@include('components/price-card.html', {"plan": "Enterprise","audience": "For large organizations","price": "$999","park_1": "Customizable Dashboard","park_2": "Advanced Budgeting & Forecasting Tools","park_3": "Real-time Financial Reports","park_4": "Unlimited Financial Accounts","park_5": "24/7 Dedicated Support"})
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Pricing Table-->
+<section class="section">
+  <div class="container lg:px-28">
+    <div class="section-intro pb-14 text-center">
+      <h2 class="text-h3 mb-4" data-aos="fade-up-sm">
+        Choose which plan suits best for you
+      </h2>
+      <p
+        class="subtitle lg:w-3/5 mx-auto"
+        data-aos="fade-up-sm"
+        data-aos-delay="100"
+      >
+        Designed to Simplify Your Experience and Maximize the Benefits of
+        CloudPeak's Innovative Features
+      </p>
+    </div>
+
+    <!-- Tablet to Desktop View -->
+    <table
+      class="md:table hidden pricing-table"
+      data-aos="fade-up-sm"
+      data-aos-delay="150"
+    >
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            <div class="pricing-table-head">
+              <p class="title">Basic</p>
+              <div class="subtitle">For solo designers</div>
+              <div class="price-tag">
+                <span>$</span>
+                <h2>19</h2>
+              </div>
+              <div class="subtitle">per month</div>
+            </div>
+          </th>
+          <th>
+            <div class="pricing-table-head">
+              <p class="title">Premium</p>
+              <div class="subtitle">For small teams</div>
+              <div class="price-tag">
+                <span>$</span>
+                <h2>49</h2>
+              </div>
+              <div class="subtitle">per month</div>
+            </div>
+          </th>
+          <th>
+            <div class="pricing-table-head">
+              <p class="title">Enterprise</p>
+              <div class="subtitle">For large organizations</div>
+              <div class="price-tag">
+                <span>$</span>
+                <h2>99</h2>
+              </div>
+              <div class="subtitle">per month</div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Main features</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Comprehensive Dashboard</td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Basic Budgeting Tools</td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Monthly Financial Reports</td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>3 Financial Accounts</td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Email Support</td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <img data-src="images/icons/green_tick.svg" alt="tick" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Comprehensive Dashboard</td>
+          <td>
+            <div>
+              <a
+                href="#"
+                class="btn-sm lg:btn bg-theme-light border border-theme-light hover:btn-primary"
+                >Get Started</a
+              >
+            </div>
+          </td>
+          <td>
+            <div>
+              <a href="#" class="btn-sm lg:btn btn-primary">Get Started</a>
+            </div>
+          </td>
+          <td>
+            <div>
+              <a
+                href="#"
+                class="btn-sm lg:btn bg-theme-light border border-theme-light hover:btn-primary"
+                >Get Started</a
+              >
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Mobile View -->
+    <div class="block md:hidden space-y-5">
+      <!--prettier-ignore-->
+      @@include('components/pricing-table-single.html',{"title":"Basic","subtitle":"For small company","price":"$19","type":"per month","perk_1":"Basic Dashboard","perk_2":"Simple Expense Tracking","perk_3":"Monthly Financial Summary","perk_4":"1 Financial Account","perk_5":"Email Support","actionHref":"#"})
+      @@include('components/pricing-table-single-center.html',{"title":"Premium","subtitle":"For small teams","price":"$49","type":"per month","perk_1":"Basic Dashboard","perk_2":"Simple Expense Tracking","perk_3":"Monthly Financial Summary","perk_4":"1 Financial Account","perk_5":"Email Support","actionHref":"#"})
+      @@include('components/pricing-table-single.html',{"title":"Enterprise","subtitle":"For large organization","price":"$99","type":"per month","perk_1":"Basic Dashboard","perk_2":"Simple Expense Tracking","perk_3":"Monthly Financial Summary","perk_4":"1 Financial Account","perk_5":"Email Support","actionHref":"#"})
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="grid lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <div class="section-intro text-center lg:text-left">
+          <h2 class="title">Common Questions</h2>
+          <p class="subtitle lg:w-3/5 mx-auto lg:mx-0">
+            Haven't found what you're looking for? Contact us
+          </p>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <!--FAQ CARDS-->
+        <div>
+          <!--prettier-ignore-->
+          @@include("components/accordion.html",{title:"What is CloudPeak?",accordion_content:"CloudPeak is a comprehensive cloud-based platform that provides integrated financial management tools, advanced analytics, and collaborative features to help businesses of all sizes optimize their operations and make data-driven decisions."})
+
+          @@include("components/accordion.html",{title:"What services does CloudPeak offer?",accordion_content:"CloudPeak offers a wide range of services including real-time financial reporting, budgeting and forecasting tools, expense management, invoicing, project costing, and customizable dashboards. We also provide API integrations with popular business software for seamless data flow."})
+
+          @@include("components/accordion.html",{title:"How can I get started with CloudPeak?",accordion_content:"Getting started with CloudPeak is easy. Simply visit our website, choose a plan that fits your needs, and sign up for a free trial. Our onboarding team will guide you through the setup process and provide training to ensure you get the most out of our platform."})
+
+          @@include("components/accordion.html",{title:"What are the benefits of using CloudPeak?",accordion_content:"CloudPeak offers numerous benefits including improved financial visibility, streamlined processes, enhanced collaboration, cost savings, and better decision-making capabilities. Our platform scales with your business, providing the tools you need to drive growth and efficiency."})
+
+          @@include("components/accordion.html",{title:"How secure is CloudPeak?",accordion_content:"Security is our top priority. CloudPeak employs industry-leading encryption, regular security audits, and multi-factor authentication. We are SOC 2 Type II compliant and adhere to strict data protection regulations to ensure your sensitive financial information remains secure."})
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('call-to-action.html')

@@ -1,0 +1,125 @@
+<header class="header z-30">
+  <nav class="navbar container">
+    <!-- logo -->
+    <div class="order-0">
+      <a class="navbar-brand block" href="index.html">
+        <img
+          src="images/logo.svg"
+          class="h-[50px]"
+          height="50"
+          width="175"
+          loading="eager"
+          alt="logo"
+        />
+      </a>
+    </div>
+
+    <!-- navbar toggler -->
+    <input id="nav-toggle" type="checkbox" class="hidden" title="nav-toggle" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-white/70 lg:order-1"
+    >
+      <div class="space-y-3 w-6 -translate-y-[20%]" id="show-button">
+        <title class="hidden">Menu Open</title>
+        <div
+          class="w-full h-[2px] bg-text transition-transform"
+          id="ham_top"
+        ></div>
+        <div
+          class="w-full h-[2px] bg-text transition-transform"
+          id="ham_bottom"
+        ></div>
+      </div>
+    </label>
+    <!-- /navbar toggler -->
+    <ul
+      id="nav-menu"
+      class="navbar-nav shadow-inset shadow-shadow/30 lg:shadow-none order-3 hidden lg:order-1 lg:flex items-center lg:w-auto lg:space-x-2 lg:pb-0"
+    >
+      <li class="nav-item nav-dropdown group relative" id="all-pages">
+        <span class="nav-link inline-flex items-center cursor-pointer">
+          All Pages
+          <svg
+            class="h-4 w-4 fill-current group-hover:-rotate-180 ml-2 transition-transform duration-500"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+        <ul
+          id="all-pages-dropdown"
+          class="hidden border border-border p-8 mb-2 lg:mb-0 lg:transition-[opacity_transform] lg:duration-500 lg:absolute lg:invisible lg:group-hover:visible lg:opacity-0 lg:group-hover:opacity-100 lg:scale-95 lg:group-hover:scale-100 lg:group-hover:grid lg:grid lg:grid-cols-3 lg:gap-x-8 min-w-max nav-dropdown-list"
+        >
+          <li class="nav-dropdown-item">
+            <a href="elements.html" class="nav-dropdown-link">Elements</a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="about.html" class="nav-dropdown-link">About</a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="changelog.html" class="nav-dropdown-link"> Changelog </a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="integration.html" class="nav-dropdown-link">Integration</a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="integration-single.html" class="nav-dropdown-link"
+              >Integration Single</a
+            >
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="book-demo.html" class="nav-dropdown-link">
+              Book a Free Demo
+            </a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="case.html" class="nav-dropdown-link">Case Studies</a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="case-single.html" class="nav-dropdown-link"
+              >Case Studies Single</a
+            >
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="terms.html" class="nav-dropdown-link"> Terms of Use </a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="blog.html" class="nav-dropdown-link">Blog</a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="blog-single.html" class="nav-dropdown-link">Blog Single</a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="privacy.html" class="nav-dropdown-link">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="nav-dropdown-item">
+            <a href="404.html" class="nav-dropdown-link"> 404 Page </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="features.html" class="nav-link">Features</a>
+      </li>
+      <li class="nav-item">
+        <a href="pricing.html" class="nav-link">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </li>
+
+      <li class="inline-block lg:hidden mt-4 lg:mt-0">
+        <a class="btn btn-secondary" href="contact.html"> Get Started </a>
+      </li>
+    </ul>
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      <a class="btn btn-secondary hidden lg:inline-block" href="contact.html">
+        Get Started
+      </a>
+    </div>
+  </nav>
+</header>

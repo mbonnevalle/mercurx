@@ -1,0 +1,22 @@
+<!--prettier-ignore-->
+@@include('page-header.html', { "title": "Seamless Integration with Your Favorite Tools","desc":"Effortlessly connect our platform with the apps and services you already use. Enhance your workflow" })
+
+<section class="section">
+  <div class="container lg:px-20">
+    <!--prettier-ignore-->
+    <div class="grid lg:grid-cols-3 gap-6" data-aos="fade-up-sm"
+    data-aos-delay="150">
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/apple_pay.png", title:"Apple Pay", desc:"Transform your wallet with quick and secure digital payments across devices.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/snapchat.png", title:"SnapChat", desc:"Share moments and stay connected with friends through ephemeral videos.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/slack.png", title:"Slack", desc:"Streamline communication and collaboration with Slack integration.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/adobe.png", title:"Adobe", desc:"Unleash your creativity with industry-leading software for design, photography.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/google_drive.png", title:"Google Drive", desc:"Store and share files securely with Google Drive integration.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/master_card.png", title:"Master Card", desc:"Experience convenience and security with a world-class payment network.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/visa_card.png", title:"Visa Card", desc:"Experience convenience and security with a world-class payment network.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/paypal.png", title:"Paypal", desc:"Experience convenience and security with a world-class payment network.", href:"integration-single.html"})
+      @@include('components/integration-card.html',{logoSrc:"images/integrations/google_chrome.png", title:"Google Chrome", desc:"Authentication and advanced encryption to protect your data.", href:"integration-single.html"})
+    </div>
+  </div>
+</section>
+
+@@include('call-to-action.html')
