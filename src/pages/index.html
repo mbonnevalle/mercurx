@@ -2,27 +2,23 @@
 <section class="relative lg:pb-[450px] overflow-hidden">
   <div class="container relative">
     <div class="row justify-center">
-      <div class="pt-20 xl:col-8 py-10 text-center">
+      <div class="pt-10 xl:col-8 py-10 text-center">
         <div class="flex flex-col items-center gap-8">
           <div class="overflow-hidden">
             <div class="animate-headshot">
               <div
-                class="shadow-inset-sm border border-border px-4 pt-1.5 pb-1 rounded-3xl text-white text-sm font-light"
-              >
+                class="shadow-inset-sm border border-border px-4 pt-1.5 pb-1 rounded-3xl text-white text-sm font-light">
                 <p>Mercurx, We will bring you into the future</p>
               </div>
             </div>
           </div>
           <div>
-            <h1
-              data-aos="fade-up-sm"
-              class="font-normal text-h2 lg:text-[3rem] lg:leading-[1.2] mb-3 tracking-tighter"
-            >
+            <h1 data-aos="fade-up-sm" class="font-normal text-h2 lg:text-[3rem] lg:leading-[1.2] mb-3 tracking-tighter">
               Your trusted Web3 Partner to unlock a new way of trading
             </h1>
             <div class="xl:col-9 mx-auto">
               <p data-aos="fade-up-sm" data-aos-delay="100">
-                
+
               </p>
             </div>
           </div>
@@ -32,37 +28,15 @@
   </div>
   <!-- /Banner -->
 
-  <!-- Trusted Brands -->
+
   <div class="relative container-fluid pt-20 xl:pt-24">
     <div class="mt-5 lg:mt-16 pb-10" data-aos="fade-up-sm" data-aos-delay="200">
       <div
-        class="p-6 border border-white/15 rounded-4xl mx-auto w-full sm:w-2/3 xl:max-w-[950px] object-cover lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2"
-      >
-        <img
-          class="rounded-3xl overflow-hidden"
-          src="images/desktop-interface.png"
-          width="1024"
-          height="784"
-          loading="eager"
-          alt="banner image"
-        />
+        class="p-6 border border-white/15 rounded-4xl mx-auto w-full sm:w-2/3 xl:max-w-[950px] object-cover lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2">
+        <img class="rounded-3xl overflow-hidden" src="images/reveal-soon-top.png" width="1024" height="784"
+          loading="eager" alt="banner image" />
       </div>
     </div>
-  </div>
-
-  <div
-    class="hidden lg:block absolute left-10 -bottom-20 w-full -z-10"
-    data-aos="fade-in"
-    data-aos-delay="500"
-    data-aos-duration="2000"
-    data-aos-easing="ease-out"
-  >
-    <img
-      src="images/shapes/hero_blob.webp"
-      class="w-full max-w-[2000px] mx-auto lg:scale-110"
-      loading="eager"
-      alt=""
-    />
   </div>
 </section>
 
@@ -86,102 +60,6 @@
   </div>
 </section>
 
-<!-- Our Journey -->
-<section class="section">
-  <div class="container">
-    <div class="section-intro text-center lg:col-8 mx-auto">
-      <h2 data-aos="fade-up-sm" class="title">Our Journey and Mission</h2>
-      <p data-aos="fade-up-sm" data-aos-delay="100" class="subtitle">
-        Explore Our Inspirational Journey, Values, and Commitment to Providing
-        Exceptional SaaS Solutions That Empower Your Business
-      </p>
-    </div>
-    <div class="section-content lg:px-20">
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- card -->
-        <!-- prettier-ignore -->
-        @@include('components/ourmission-card.html', {title: "Seamless Integration", description: "CloudPeak's Flexible Integration Options for Enhanced Efficiency.", imageSrc:"images/cards/faster_integration.webp","aosDelay":"100"})
-        @@include('components/ourmission-card.html', {title: "Scalable Infrastructure", description: "CloudPeak's Scalable Infrastructure Can Handle Your Increasing Demands and Workloads.", imageSrc:"images/cards/happy_customers.webp","aosDelay":"150"})
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Our Services -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="section-intro text-center lg:col-7 mx-auto">
-      <h2 data-aos="fade-up-sm" class="title">How CloudPeak Works</h2>
-      <p
-        data-aos="fade-up-sm"
-        data-aos-delay="100"
-        class="subtitle w-5/6 mx-auto"
-      >
-        Designed to Simplify Your Experience and Maximize the Benefits of
-        CloudPeak's Innovative Features
-      </p>
-    </div>
-    <div class="section-content lg:px-20">
-      <div class="flex flex-col gap-16">
-        <div class="grid md:grid-cols-2 gap-10 xl:gap-16">
-          <div>
-            @@include('components/process-card.html', {imageSrc: "images/cards/revenue_growth_baronly.webp", imageAlt: "Process Image", percentage: "25%", growthRate: "9.2%", desc: "Average revenue growth"})
-          </div>
-          <div class="self-center">
-            <div class="space-y-8" data-aos="fade-up-sm">
-              <div>
-                <h3 class="mb-4">Effortless Onboarding Process Fast</h3>
-                <p class="">
-                  Discover Our Streamlined and User-Friendly Onboarding Process,
-                  Designed to Get You Up and Running Quickly and Efficiently.
-                </p>
-              </div>
-              @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Learn More"})
-            </div>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10 xl:gap-16">
-          <div class="order-1 md:order-2">
-            @@include('components/process-card-img-only.html', {imageSrc: "images/cards/web_chart.webp", imageAlt: "Process Image"})
-          </div>
-          <div class="self-center order-1 md:order-1">
-            <div class="space-y-8" data-aos="fade-up-sm">
-              <div>
-                <h3 class="mb-4">Seamless Integration with Your Workflow.</h3>
-                <p class="">
-                  Learn How CloudPeak Seamlessly Integrates with Your Existing
-                  Systems and Processes, Ensuring Minimal Maximum Efficiency.
-                </p>
-              </div>
-              @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Learn More"})
-            </div>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10 xl:gap-16">
-          <div>
-            @@include('components/process-card.html', {imageSrc: "images/cards/line_chart.webp", imageAlt: "Process Image", percentage: "120K", growthRate: "9.2%", desc: "Happy customers worldwide"})
-          </div>
-          <div class="self-center">
-            <div class="space-y-8" data-aos="fade-up-sm">
-              <div>
-                <h3 class="mb-4">Expert Guidance Every Step of the Way.</h3>
-                <p class="">
-                  Experience a Guided Onboarding Experience with CloudPeak,
-                  Where Our Expert Team Provides Personalized Support and
-                  Assistance
-                </p>
-              </div>
-              @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Learn More"})
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <!-- FAQ -->
 <section class="section">
   <div class="container">
@@ -189,11 +67,7 @@
       <div class="lg:col-span-5">
         <div class="section-intro text-center lg:text-left">
           <h2 class="title" data-aos="fade-up-sm">Common Questions</h2>
-          <p
-            class="subtitle lg:w-3/5 mx-auto lg:mx-0"
-            data-aos="fade-up-sm"
-            data-aos-delay="100"
-          >
+          <p class="subtitle lg:w-3/5 mx-auto lg:mx-0" data-aos="fade-up-sm" data-aos-delay="100">
             Haven't found what you're looking for? Contact us
           </p>
         </div>
