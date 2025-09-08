@@ -49,7 +49,7 @@ gulp.task("pages", () => {
     .pipe(
       wrapper({
         header:
-          "<!DOCTYPE html>\n<html lang=\"zxx\">\n@@include('head.html')\n@@include('header.html')\n<body>",
+          "<!DOCTYPE html>\n<html lang=\"zxx\">\n@@include('head.html',{'pageDescription': 'MercurX empowers institutions with asset and treasury management, Web3 expertise, and quantitative trading solutions.','pageUrl': 'https://mercurx.io','robots': 'index,follow'})\n@@include('header.html')\n<body>",
         footer:
           node_env === "dev"
             ? "@@include('components/tw-size-indicator.html')\n @@include('footer.html')\n</body>\n</html>"
