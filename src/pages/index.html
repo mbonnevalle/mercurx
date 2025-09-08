@@ -18,7 +18,7 @@
             </h1>
             <div class="xl:col-9 mx-auto">
               <p data-aos="fade-up-sm" data-aos-delay="100">
-
+                Empowering Your Success with effortless solution for asset management.
               </p>
             </div>
           </div>
@@ -26,19 +26,41 @@
       </div>
     </div>
   </div>
-  <!-- /Banner -->
 
 
   <div class="relative container-fluid pt-20 xl:pt-24">
     <div class="mt-5 lg:mt-16 pb-10" data-aos="fade-up-sm" data-aos-delay="200">
       <div
-        class="p-6 border border-white/15 rounded-4xl mx-auto w-full sm:w-2/3 xl:max-w-[950px] object-cover lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2">
-        <img class="rounded-3xl overflow-hidden" src="images/reveal-soon-top.png" width="1024" height="784"
-          loading="eager" alt="banner image" />
+        class="p-6 border border-white/15 rounded-4xl mx-auto w-full sm:w-2/3 xl:max-w-[950px] object-cover lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2"
+      >
+        <img
+          class="rounded-3xl overflow-hidden"
+          src="images/desktop-interface.png"
+          width="1024"
+          height="784"
+          loading="eager"
+          alt="banner image"
+        />
       </div>
     </div>
   </div>
+
+  <div
+    class="hidden lg:block absolute left-10 -bottom-20 w-full -z-10"
+    data-aos="fade-in"
+    data-aos-delay="500"
+    data-aos-duration="2000"
+    data-aos-easing="ease-out"
+  >
+    <img
+      src="images/shapes/hero_blob.webp"
+      class="w-full max-w-[2000px] mx-auto lg:scale-110"
+      loading="eager"
+      alt=""
+    />
+  </div>
 </section>
+<!-- /Banner -->
 
 <!-- Our Commitments -->
 <section class="section pt-16 pb-10">
@@ -55,7 +77,27 @@
       <!-- prettier-ignore -->
       @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Asset Management",description:"","aosDelay":"100"})
       @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Treasury Management",description:"","aosDelay":"100"})
-      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Market Maker",description:"","aosDelay":"100"})
+      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Market Maker",description:"  <br>  ","aosDelay":"100"})
+    </div>
+  </div>
+</section>
+
+<section id="about-us" class="section">
+  <div class="container">
+    <div class="section-intro text-center lg:col-8 mx-auto">
+      <h2 data-aos="fade-up-sm" class="title">Our Commintment at MercurX</h2>
+      <p data-aos="fade-up-sm" data-aos-delay="100" class="subtitle">
+        Explore Our Inspirational Journey, Values, and Commitment to Providing
+        Exceptional Solutions That Empower Your Web3 Experience
+      </p>
+    </div>
+    <div class="section-content lg:px-20">
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- card -->
+        <!-- prettier-ignore -->
+        @@include('components/ourmission-card.html', {title: "Our Story", description: "MercurX was founded on the principles of innovation, integrity, and collaboration, with client success at its core.<br><br>Since 2025, MercurX has been shaping the future of trading and digital finance, providing tailored solutions for institutional and professional clients across global markets.<br><br>Our multidisciplinary team combines a start-up spirit with deep expertise in Web3, Proprietary Trading, Digital Assets, Technology, and Quantitative Finance.","aosDelay":"100"})
+        @@include('components/ourmission-card.html', {title: "Our Expertise", description: "Our mission is to empower businesses and institutions by guiding them through the transformation of their financial operations. With expertise in Asset and Treasury Management, we deliver tailored strategies that strengthen performance, liquidity and unlock new opportunities in a rapidly evolving environment.<br><br>We believe that innovation must serve stability. That’s why our team combines quantitative precision with a client-focused mindset, ensuring every partnership is built on trust, transparency, and long-term value creation.","aosDelay":"150"})
+      </div>
     </div>
   </div>
 </section>
@@ -76,13 +118,13 @@
         <!--FAQ CARDS-->
         <div data-aos="fade-up-sm" data-aos-delay="150">
           <!--prettier-ignore-->
-          @@include("components/accordion.html",{title:"What is MercurX?",accordion_content:"We are here for you."})
+          @@include("components/accordion.html",{title:"What is MercurX?",accordion_content:"MercurX is a 2025-founded financial partner, empowering institutions through innovation, asset and treasury management, Web3 expertise, and trusted guidance for sustainable trading transformation worldwide."})
 
           @@include("components/accordion.html",{title:"What services does MercurX offer?",accordion_content:"MercurX offers a wide range of services including Market Making, Treasury Management and Asset Management. We also provide API integrations with popular business software for seamless data flow."})
 
           @@include("components/accordion.html",{title:"How can I get started with MercurX?",accordion_content:"Getting started with MercurX is easy. Simply visit our website, contact us and our onboarding team will guide you through the setup process and provide training to ensure you get the most out of our services."})
 
-          @@include("components/accordion.html",{title:"What are the benefits of using MercurX?",accordion_content:"MercurX offers numerous benefits including ......................"})
+          <!-- @@include("components/accordion.html",{title:"What are the benefits of using MercurX?",accordion_content:"MercurX offers numerous benefits including ......................"}) -->
 
           @@include("components/accordion.html",{title:"How secure is MercurX?",accordion_content:"Security is our top priority. MercurX employs industry-leading encryption, regular security audits, and multi-factor authentication."})
         </div>
