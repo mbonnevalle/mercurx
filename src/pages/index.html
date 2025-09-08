@@ -2,58 +2,45 @@
 <section class="relative lg:pb-[450px] overflow-hidden">
   <div class="container relative">
     <div class="row justify-center">
-      <div class="xl:col-8 py-10 text-center">
+      <div class="pt-20 xl:col-8 py-10 text-center">
         <div class="flex flex-col items-center gap-8">
           <div class="overflow-hidden">
             <div class="animate-headshot">
               <div
                 class="shadow-inset-sm border border-border px-4 pt-1.5 pb-1 rounded-3xl text-white text-sm font-light"
               >
-                <p>New version available. <a href="#">Download now!</a></p>
+                <p>Mercurx, We will bring you into the future</p>
               </div>
             </div>
           </div>
           <div>
             <h1
               data-aos="fade-up-sm"
-              class="font-normal text-h2 lg:text-[5rem] lg:leading-[1.2] mb-3 tracking-tighter"
+              class="font-normal text-h2 lg:text-[3rem] lg:leading-[1.2] mb-3 tracking-tighter"
             >
-              Elevate Your Business with CloudPeak
+              Your trusted Web3 Partner to unlock a new way of trading
             </h1>
             <div class="xl:col-9 mx-auto">
               <p data-aos="fade-up-sm" data-aos-delay="100">
-                Empowering Your Success with Cutting-Edge SaaS Solutions Built
-                for Scalability, Efficiency, and Growth.
+                
               </p>
             </div>
-          </div>
-          <div
-            class="flex flex-wrap gap-3 justify-center"
-            data-aos="fade-up-sm"
-            data-aos-delay="150"
-          >
-            <!--prettier-ignore-->
-            @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Get Free Version"})
-            <a
-              class="btn btn-secondary border border-tertiary/70"
-              href="pricing.html"
-            >
-              Get Pro Version
-            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- /Banner -->
 
-  <div class="relative container-fluid">
+  <!-- Trusted Brands -->
+  <div class="relative container-fluid pt-20 xl:pt-24">
     <div class="mt-5 lg:mt-16 pb-10" data-aos="fade-up-sm" data-aos-delay="200">
       <div
         class="p-6 border border-white/15 rounded-4xl mx-auto w-full sm:w-2/3 xl:max-w-[950px] object-cover lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2"
       >
         <img
           class="rounded-3xl overflow-hidden"
-          src="images/desktop_dashboard.webp"
+          src="images/desktop-interface.png"
           width="1024"
           height="784"
           loading="eager"
@@ -78,41 +65,23 @@
     />
   </div>
 </section>
-<!-- /Banner -->
-
-<!-- Trusted Brands -->
-<section class="section pt-20 xl:pt-24">
-  <div class="container">
-    <p class="text-center text-lg mb-10" data-aos="fade-up-sm">
-      Trusted by thousands of companies worldwide
-    </p>
-    <div data-aos="fade-up-sm" data-aos-delay="100">
-      <div class="flex flex-wrap justify-around gap-8">
-        <img data-src="images/brands/boltshift.svg" alt="boltshift" />
-        <img data-src="images/brands/featherdev.svg" alt="featherdev" />
-        <img data-src="images/brands/globalbank.svg" alt="globalbank" />
-        <img data-src="images/brands/lightbox.svg" alt="lightbox" />
-        <img data-src="images/brands/nietzsche.svg" alt="nietzsche" />
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Our Commitments -->
-<section class="section">
+<section class="section pt-16 pb-10">
   <div class="container">
-    <div class="grid lg:grid-cols-3 items-center gap-8">
+    <div class="grid lg:grid-cols-4 items-center gap-8">
       <div data-aos="fade-up-sm">
-        <h2 class="mb-4 text-h4">We Help Transforms Your Business</h2>
+        <h2 class="mb-4 text-h4">We Help Transforms Your Business & Trading Operations</h2>
         <p>
           Our mission is to empower individuals and organizations to unleash
-          their creative potential
+          their full web3 experiences
         </p>
       </div>
       <!-- Card -->
       <!-- prettier-ignore -->
-      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Streamlined Workflow",description:"Effortlessly Collaborate Across Teams and Projects with CloudPeak's Seamless and Intuitive Collaboration Tools","aosDelay":"100"})
-      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Robust Data Security",description:"Protect Your Sensitive Information with Cutting-Edge Encryption and Security Measures solutions","aosDelay":"200"})
+      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Asset Management",description:"","aosDelay":"100"})
+      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Treasury Management",description:"","aosDelay":"100"})
+      @@include('components/commitmentCard.html',{icon:"images/icons/windspeed.svg",title:"Market Maker",description:"","aosDelay":"100"})
     </div>
   </div>
 </section>
@@ -139,7 +108,7 @@
 </section>
 
 <!-- Our Services -->
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <div class="section-intro text-center lg:col-7 mx-auto">
       <h2 data-aos="fade-up-sm" class="title">How CloudPeak Works</h2>
@@ -154,10 +123,8 @@
     </div>
     <div class="section-content lg:px-20">
       <div class="flex flex-col gap-16">
-        <!-- Service Row -->
         <div class="grid md:grid-cols-2 gap-10 xl:gap-16">
           <div>
-            <!-- prettier-ignore -->
             @@include('components/process-card.html', {imageSrc: "images/cards/revenue_growth_baronly.webp", imageAlt: "Process Image", percentage: "25%", growthRate: "9.2%", desc: "Average revenue growth"})
           </div>
           <div class="self-center">
@@ -169,16 +136,13 @@
                   Designed to Get You Up and Running Quickly and Efficiently.
                 </p>
               </div>
-              <!--prettier-ignore-->
               @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Learn More"})
             </div>
           </div>
         </div>
 
-        <!-- Service Row -->
         <div class="grid md:grid-cols-2 gap-10 xl:gap-16">
           <div class="order-1 md:order-2">
-            <!-- prettier-ignore -->
             @@include('components/process-card-img-only.html', {imageSrc: "images/cards/web_chart.webp", imageAlt: "Process Image"})
           </div>
           <div class="self-center order-1 md:order-1">
@@ -190,16 +154,13 @@
                   Systems and Processes, Ensuring Minimal Maximum Efficiency.
                 </p>
               </div>
-              <!--prettier-ignore-->
               @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Learn More"})
             </div>
           </div>
         </div>
 
-        <!-- Service Row -->
         <div class="grid md:grid-cols-2 gap-10 xl:gap-16">
           <div>
-            <!-- prettier-ignore -->
             @@include('components/process-card.html', {imageSrc: "images/cards/line_chart.webp", imageAlt: "Process Image", percentage: "120K", growthRate: "9.2%", desc: "Happy customers worldwide"})
           </div>
           <div class="self-center">
@@ -212,7 +173,6 @@
                   Assistance
                 </p>
               </div>
-              <!--prettier-ignore-->
               @@include("components/primary-arrow-btn.html",{href:"contact.html","title":"Learn More"})
             </div>
           </div>
@@ -220,105 +180,7 @@
       </div>
     </div>
   </div>
-</section>
-
-<!-- Our Pricing Plan -->
-<section class="section">
-  <div class="container">
-    <div class="section-intro lg:col-6 mx-auto text-center">
-      <h2 class="title" data-aos="fade-up-sm">Choose A Plan</h2>
-      <p class="subtitle" data-aos="fade-up-sm" data-aos-delay="100">
-        Created to Simplify Your Experience and Unlock the Advantages of
-        CloudPeak's Innovative Technologies
-      </p>
-
-      <!-- price toggle buttons -->
-      <div
-        data-aos="fade-up-sm"
-        data-aos-delay="150"
-        class="mt-10 flex items-center gap-x-3 lg:gap-x-5 justify-center text-sm font-light transition-all"
-      >
-        <span class="text-white duration-500" id="monthly">Monthly</span>
-
-        <label class="inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            value=""
-            aria-label="pricing switch"
-            id="pricing-switch"
-            class="sr-only peer"
-          />
-          <div
-            class="relative w-[65px] h-[32px] bg-primary peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[33px] rtl:peer-checked:after:-translate-x-[22px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[24px] after:w-[24px] after:transition-all after:duration-500 after:ease-in-out peer-checked:bg-primary"
-          ></div>
-        </label>
-
-        <span id="yearly" class="duration-500">Yearly</span>
-      </div>
-    </div>
-    <div
-      class="section-content lg:px-20"
-      data-aos="fade-up-sm"
-      data-aos-delay="150"
-    >
-      <!-- MONTHLY PRICE CARDS -->
-      <div id="monthly-card-container">
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <!-- prettier-ignore -->
-          @@include('components/price-card.html', {"plan": "Basic", "audience": "For solo designers", "price": "$19", "park_1": "Basic Dashboard", "park_2": "Simple Expense Tracking", "park_3": "Monthly Financial Summary", "park_4": "1 Financial Account", "park_5": "Email Support"})
-          @@include('components/price-center-card.html', {"plan": "Premium", "audience": "For small teams", "price": "$49", "park_1": "Comprehensive Dashboard", "park_2": "Advanced Budgeting Tools", "park_3": "Weekly Financial Reports", "park_4": "5 Financial Accounts", "park_5": "Priority Email Support"})
-          @@include('components/price-card.html', {"plan": "Enterprise", "audience": "For large organizations", "price": "$99", "park_1": "Customizable Dashboard", "park_2": "Advanced Forecasting Tools", "park_3": "Real-time Financial Reporting", "park_4": "Unlimited Financial Accounts", "park_5": "24/7 Dedicated Support"})
-        </div>
-      </div>
-      <!--YEARLY PRICE CARDS-->
-      <div id="yearly-card-container" class="hidden">
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          <!-- prettier-ignore -->
-          @@include('components/price-card.html', {"plan": "Basic","audience": "For solo entrepreneurs","price": "$199","park_1": "Basic Dashboard","park_2": "Personal Budgeting Tools","park_3": "Quarterly Financial Reports","park_4": "1 Financial Account","park_5": "Email Support (48h response time)"})
-          @@include('components/price-center-card.html', {"plan": "Premium","audience": "For small teams","price": "$499","park_1": "Advanced Dashboard","park_2": "Team Budgeting Tools","park_3": "Monthly Financial Reports","park_4": "5 Financial Accounts","park_5": "Priority Email Support (24h response time)"})
-          @@include('components/price-card.html', {"plan": "Enterprise","audience": "For large organizations","price": "$999","park_1": "Customizable Dashboard","park_2": "Advanced Budgeting & Forecasting Tools","park_3": "Real-time Financial Reports","park_4": "Unlimited Financial Accounts","park_5": "24/7 Dedicated Support"})
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="section">
-  <div class="container">
-    <div class="section-intro lg:col-8 mx-auto text-center">
-      <h2 class="title" data-aos="fade-up-sm">Trusted by 14,000+ users</h2>
-      <p
-        class="subtitle w-5/6 mx-auto"
-        data-aos="fade-up-sm"
-        data-aos-delay="100"
-      >
-        Sharing Their Successes and Transformative Experiences with CloudPeak's
-        Powerful SaaS Solutions
-      </p>
-    </div>
-    <div class="section-content">
-      <!--Testimonial Cards-->
-      <div
-        class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-        data-aos="fade-up-sm"
-        data-aos-delay="150"
-      >
-        <!--prettier-ignore-->
-        @@include('components/testimonial-card.html', {"quote": "CloudPeak has been a game-changer for our business. Their intuitive platform and service have allowed us to streamline our operations and focus on what matters most. Highly recommended", "name": "Sarah Taranian", "position": "Creative Director", "image": "images/profiles/profile_1.png"})
-        @@include('components/testimonial-card.html', {"quote": "CloudPeak's financial analytics tools have given us unprecedented insights into our cash flow. It's like having a CFO in your pocket.", "name": "Michael Chen", "position": "CEO, TechNova Solutions", "image": "images/profiles/profile_2.png"})
-
-        @@include('components/testimonial-card.html', {"quote": "The real-time reporting feature has transformed our decision-making process. We can now respond to market changes faster than ever.", "name": "Emily Rodriguez", "position": "COO, GreenLeaf Enterprises", "image": "images/profiles/profile_3.png"})
-
-        @@include('components/testimonial-card.html', {"quote": "As a small business owner, CloudPeak's budgeting tools have been invaluable. I finally feel in control of my finances.", "name": "David Okonkwo", "position": "Founder, Craft Coffee Co.", "image": "images/profiles/profile_4.png"})
-
-        @@include('components/testimonial-card.html', {"quote": "The customer support team at CloudPeak is exceptional. They've gone above and beyond to ensure our success with the platform.", "name": "Lisa Tanaka", "position": "Finance Manager, Global Innovations", "image": "images/profiles/profile_5.png"})
-
-        @@include('components/testimonial-card.html', {"quote": "CloudPeak's integration capabilities have allowed us to consolidate our financial data from multiple sources effortlessly. It's been a huge time-saver.", "name": "Alex Petrov", "position": "CTO, DataSync Systems", "image": "images/profiles/profile_6.png"})
-      </div>
-    </div>
-  </div>
-</section>
+</section> -->
 
 <!-- FAQ -->
 <section class="section">
@@ -340,15 +202,15 @@
         <!--FAQ CARDS-->
         <div data-aos="fade-up-sm" data-aos-delay="150">
           <!--prettier-ignore-->
-          @@include("components/accordion.html",{title:"What is CloudPeak?",accordion_content:"CloudPeak is a comprehensive cloud-based platform that provides integrated financial management tools, advanced analytics, and collaborative features to help businesses of all sizes optimize their operations and make data-driven decisions."})
+          @@include("components/accordion.html",{title:"What is MercurX?",accordion_content:"We are here for you."})
 
-          @@include("components/accordion.html",{title:"What services does CloudPeak offer?",accordion_content:"CloudPeak offers a wide range of services including real-time financial reporting, budgeting and forecasting tools, expense management, invoicing, project costing, and customizable dashboards. We also provide API integrations with popular business software for seamless data flow."})
+          @@include("components/accordion.html",{title:"What services does MercurX offer?",accordion_content:"MercurX offers a wide range of services including Market Making, Treasury Management and Asset Management. We also provide API integrations with popular business software for seamless data flow."})
 
-          @@include("components/accordion.html",{title:"How can I get started with CloudPeak?",accordion_content:"Getting started with CloudPeak is easy. Simply visit our website, choose a plan that fits your needs, and sign up for a free trial. Our onboarding team will guide you through the setup process and provide training to ensure you get the most out of our platform."})
+          @@include("components/accordion.html",{title:"How can I get started with MercurX?",accordion_content:"Getting started with MercurX is easy. Simply visit our website, contact us and our onboarding team will guide you through the setup process and provide training to ensure you get the most out of our services."})
 
-          @@include("components/accordion.html",{title:"What are the benefits of using CloudPeak?",accordion_content:"CloudPeak offers numerous benefits including improved financial visibility, streamlined processes, enhanced collaboration, cost savings, and better decision-making capabilities. Our platform scales with your business, providing the tools you need to drive growth and efficiency."})
+          @@include("components/accordion.html",{title:"What are the benefits of using MercurX?",accordion_content:"MercurX offers numerous benefits including ......................"})
 
-          @@include("components/accordion.html",{title:"How secure is CloudPeak?",accordion_content:"Security is our top priority. CloudPeak employs industry-leading encryption, regular security audits, and multi-factor authentication. We are SOC 2 Type II compliant and adhere to strict data protection regulations to ensure your sensitive financial information remains secure."})
+          @@include("components/accordion.html",{title:"How secure is MercurX?",accordion_content:"Security is our top priority. MercurX employs industry-leading encryption, regular security audits, and multi-factor authentication."})
         </div>
       </div>
     </div>
