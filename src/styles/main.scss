@@ -15,3 +15,12 @@
 @layer utilities {
   @import "utilities";
 }
+
+.text2 {
+    clear: left;
+    color: #cfe6ff;
+    font-family: VT323, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+}
